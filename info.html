@@ -6,8 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="rss.css">
    </head>
 <body>
+<script>
+var n = Math.floor(Math.random()*3);
+var radioimage = new Image();
+radioimage.src = "http://anon.fm/imgs/"+ n +".jpg";
+
+window.onload = function(){
+ document.getElementById("radioimage").appendChild(radioimage);
+}
+</script>
+
     <h1>Radio Anonymous</h1>
-    <img src="/imgs/img.jpg">
+    <div id="radioimage">
+<noscript><img src="http://anon.fm/imgs/2.jpg"/></noscript>
+     </div>
     <br>
     <br>
 <img id="playnow">
