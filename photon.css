@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    padding: 8px;
+    margin-bottom: auto;
+}
+
+html, body {
+    background-color: #eee;
+    color: #333333;
+    font-family: "Trebuchet MS",Trebuchet,tahoma,serif;
+}
+
+a.rolloverc {
+    background: url(/imgs/but.gif); 
+    display: block; 
+    width: 146px; 
+    height: 30px; 
+   }
+a.rolloverc:hover {
+    background: url(/imgs/but1.gif); 
+   }
+a {
+    color: #996793;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0066FF;
+    text-decoration: none;
+}
+
+dl.menu dt {
+    background:#DDDDDD;
+    border: solid 1px #CCCCCC;
+    -moz-border-radius: 5px;
+    margin-top: 1em;
+    padding-left: .5em;
+    
+}
+
+dl.menu dd {
+    margin: 0px;
+    padding: 0px;
+    margin-left: .5em;
+    padding-left: .5em;
+    border-left: solid 1px #CCCCCC;
+}

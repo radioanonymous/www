@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="photon.css">
+	<link rel="stylesheet" type="text/css" href="rss.css">
+   </head>
+<body>
+    <h1>Radio Anonymous</h1>
+    <img src="/imgs/img.jpg">
+    <br>
+    <br>
+<img id="playnow">
+    <script language="JavaScript">
+        var Num = 0;
+
+        function recurse_refresh(){
+      if (document.getElementById('playnow')==null) {
+          for (Num = 0; Num < document.images.length; Num++){
+              if (document.getElementsByTagName('img')[Num].src=="http://anon.fm/radioanon.png") {
+                  document.getElementsByTagName('img')[Num].id="playnow";
+                  break;
+               }
+          }
+       }
+       document.getElementById('playnow').src="http://anon.fm/radioanon.png?nocache="+(Math.floor( Math.random( )*(99999999999999999-0+1))+0);
+       setTimeout(recurse_refresh, 5000);
+        }
+        recurse_refresh();
+    </script>
+
+
+<br><br><br><br>
+
+	<ul id="rss">
+		
