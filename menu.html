@@ -5,8 +5,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/photon.css">
 </head><body>
+<script>
+var m = Math.floor(Math.random()*3);
+var radiologo = new Image();
+radiologo.src = "http://anon.fm/imgs/logos/"+ m +".png";
+
+window.onload = function(){
+ document.getElementById("radiologo").appendChild(radiologo);
+}
+</script>
+
  <div align="center">
-    <a href="http://anon.fm/info.html" target="CONTENT"><img src="/imgs/logos/3.png" border="0" height="200" width="200"></a>
+    <a href="http://anon.fm/info.html" id="radiologo" target="CONTENT"></a>
  </div>
  <div align="center">
    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" id="musplayer-radioanton" align="middle" height="140" width="200">
