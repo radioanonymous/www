@@ -1,0 +1,18 @@
+body {
+        margin: 0;
+        padding: 8px;
+        margin-bottom: auto;
+     }
+
+img  {
+        display: block;
+        margin:0px auto;
+     }
+html, body {
+
+        background-color: #eee;
+        color: #333333;
+        font-family: "Trebuchet MS",Trebuchet,tahoma,serif;
+           }
+h1 { color: #996793;text-align:center;}
+
